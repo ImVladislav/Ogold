@@ -17,13 +17,14 @@ body {
       background-position: center;
       background-repeat: no-repeat;
       background-attachment: fixed; */
-      cursor: url('/Cross.png'), auto;
+      cursor: url('/Cross.png') 40 40, auto;
+         /* 16 16 — координати центру */
 }
 a,
 button,
 div,
 .clickable {
-   cursor: url('/Cross.png'), pointer;
+   cursor: url('/Cross.png') 40 40, pointer;
 }
 .container {
    width: 100%;
