@@ -10,8 +10,8 @@ body {
    display: flex;
    justify-content: center;
    align-items: center;
-   overflow: hidden; 
-   /* overflow-x: hidden; */
+   /* overflow: hidden;  */
+   overflow-x: hidden;
    /* background-image: url('GoldBack.gif');
      
       background-size: cover;
