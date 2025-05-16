@@ -10,7 +10,7 @@ body {
    display: flex;
    justify-content: center;
    align-items: center;
-   overflow: hidden; /* убираем скролл */
+   /* overflow: hidden; убираем скролл */
    /* background-image: url('GoldBack.gif');
      
       background-size: cover;
