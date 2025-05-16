@@ -11,14 +11,20 @@ body {
    justify-content: center;
    align-items: center;
    overflow: hidden; /* убираем скролл */
-
-   background-image: url('GoldBack.gif');
-      /* 👈 додаємо фон */
+   /* background-image: url('GoldBack.gif');
+     
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+      background-attachment: fixed; */
+      cursor: url('/Cross.png'), auto;
 }
-
+a,
+button,
+div,
+.clickable {
+   cursor: url('/Cross.png'), pointer;
+}
 .container {
    width: 100%;
    max-width: 1200px;
@@ -26,6 +32,9 @@ body {
    padding: 20px;
    position: relative; /* добавляем для правильного позиционирования */
    overflow: hidden; /* убираем скролл внутри контейнера */
+   background-color: transparent;
+
+
 }
 
 .header {
@@ -39,6 +48,9 @@ body {
    width: 60%;
    height: auto;
    margin-bottom: 0;
+   background: none;
+   position: relative;
+   z-index: -2;
 }
 
 .title {
@@ -101,7 +113,7 @@ body {
    align-items: center;
    justify-content: center;
    border-radius: 5px;
-   cursor: pointer;
+   /* cursor: pointer; */
    transition: all 0.3s ease;
    position: relative;
    overflow: hidden;

@@ -15,10 +15,13 @@
 </head>
 
 <body>
+   <div style=" position: fixed; z-index: 0; width: 100vh; height: 100vh;">
+      <img style="height:100vh;" src="/GoldBack.gif" />
+   </div>
    <div class="container">
       <div class="header">
 
-         <img src="ico7.gif" alt="Logo" class="main-logo" />
+         <img src="ico7.png" alt="Logo" class="main-logo" />
          <div class="flex items-center justify-center">
             <div class="svg-wrap">
                <svg id="au-element" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508.6 508.6">
@@ -133,7 +136,31 @@
             });
       });
    </script>
+   <script>
+      // Додатково: створити картинку (не обов'язково, тільки для перевірки)
+      const img = new Image();
+      img.src = '/Cross.png';
+      img.style.position = 'fixed';
+      img.style.bottom = '0px';
+      img.style.top = '0px';
+      img.style.left = '0px';
+      img.style.right = '0px';
+      img.style.width = '30px';
+      img.style.opacity = '0.5';
+      // img.style.pointerEvents = 'none';
+      img.alt = 'cursor preview';
 
+      // Додати в body як підтвердження, що файл завантажено
+      document.body.appendChild(img);
+
+      // Міняє курсор динамічно (можна не використовувати, якщо є в CSS)
+      document.body.style.cursor = 'url("/Cross.png"), auto';
+
+      // Для кнопок окремо
+      document.querySelectorAll('button, .clickable').forEach(el => {
+         // el.style.cursor = 'url("/Cross.png"), pointer';
+      });
+   </script>
 </body>
 
 </html>
