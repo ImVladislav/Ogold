@@ -10,7 +10,7 @@ body {
    display: flex;
    justify-content: center;
    align-items: center;
-   overflow: hidden; 
+   /* overflow: hidden;  */
    overflow-x: hidden;
    /* background-image: url('GoldBack.gif');
      
@@ -80,7 +80,7 @@ div,
    opacity: 0;
    animation: fade-in-out 4s infinite;
 }
-
+/* 
 /* Налаштування затримки для кожного слова */
 .slogan span:nth-child(1) {
    animation-delay: 0s;
@@ -93,7 +93,7 @@ div,
 }
 .slogan span:nth-child(4) {
    animation-delay: 3s;
-}
+} */
 
 @keyframes fade-in-out {
    0%,
