@@ -7,7 +7,7 @@
    <title>Ignite</title>
    <link rel="stylesheet" href="styles.css" />
    <!-- Підключення CSS -->
-   <link rel="icon" href="logo.jpg" type="image/png" />
+   <link rel="icon" href="fav_ico_96" type="image/png" />
    <!-- Додавання фавіконки -->
    <link rel="preconnect" href="https://fonts.googleapis.com" />
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,7 +18,7 @@
    <div class="container">
       <div class="header">
 
-         <img src="ico7.jpg" alt="Logo" class="main-logo" />
+         <img src="ico7.gif" alt="Logo" class="main-logo" />
          <div class="flex items-center justify-center">
             <div class="svg-wrap">
                <svg id="au-element" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508.6 508.6">
@@ -44,11 +44,15 @@
          </p>
       </div>
 
-      <div class="progress-bar">
-         <div class="progress-text" id="progressText">
-            Dan5toMnR92GZSTfz8zPubw5qWmcZfNfmJQRKTdboQsY
+      <div class="progress-bar-container" style="width: 100%; position: relative; display: inline-block;">
+         <div class="progress-bar">
+            <div class="progress-text" id="progressText">
+               XXXXXX
+            </div>
          </div>
+         <div id="copyMessage" class="copy-message">Contract copied!</div>
       </div>
+
 
       <div class="icons">
          <a href="https://www.dextools.io/XXXXXX
@@ -107,24 +111,29 @@
       </div>
    </div>
 
-
    <script src="./script.js"></script>
 
    <script>
-      document
-         .getElementById('progressText')
-         .addEventListener('click', function () {
-            const textToCopy = this.textContent;
-            navigator.clipboard
-               .writeText(textToCopy)
-               .then(() => {
-                  alert('Text copied to clipboard!');
-               })
-               .catch((err) => {
-                  console.error('Failed to copy text: ', err);
-               });
-         });
+      const progressText = document.getElementById('progressText');
+      const copyMessage = document.getElementById('copyMessage');
+
+      progressText.addEventListener('click', () => {
+         const textToCopy = progressText.textContent;
+
+         navigator.clipboard.writeText(textToCopy)
+            .then(() => {
+               copyMessage.classList.add('show');
+
+               setTimeout(() => {
+                  copyMessage.classList.remove('show');
+               }, 2000);
+            })
+            .catch(err => {
+               console.error('Failed to copy: ', err);
+            });
+      });
    </script>
+
 </body>
 
 </html>
