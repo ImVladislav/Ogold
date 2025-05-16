@@ -31,7 +31,7 @@ div,
    width: 100%;
    max-width: 1200px;
    text-align: center;
-   padding: 20px;
+   /* padding: 20px; */
    position: relative; /* добавляем для правильного позиционирования */
    overflow: hidden; /* убираем скролл внутри контейнера */
    background-color: transparent;
