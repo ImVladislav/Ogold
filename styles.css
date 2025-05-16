@@ -10,7 +10,7 @@ body {
    display: flex;
    justify-content: center;
    align-items: center;
-   /* overflow: hidden;  */
+   overflow: hidden; 
    /* overflow-x: hidden; */
    /* background-image: url('GoldBack.gif');
      
@@ -47,7 +47,7 @@ div,
 }
 
 .main-logo {
-   width: 30%;
+   width: 40%;
    height: auto;
    margin-bottom: 0;
    background: none;
