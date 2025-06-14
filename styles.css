@@ -494,44 +494,48 @@ h1 {
 /* Extra small screens (up to 575px) */
 @media screen and (max-width: 575px) {
    .container {
-      padding: 10px;
-   }
-   
-   .main-logo {
-      width: 25vh;
-   }
-   
-   .title {
-      width: 25%;
-   }
-   
-   .slogan {
-      font-size: 30px;
-      gap: 5px;
-      margin-bottom: 30px;
-   }
-   
-   .progress-bar {
       width: 100%;
-      height: 35px;
+      min-width: 0;
+      max-width: 100vw;
+      padding: 20px 5px 10px 5px;
+      box-sizing: border-box;
+      justify-content: flex-start;
+      align-items: center;
    }
-   
-   .progress-text {
-      font-size: 10px;
+   .frame {
+      width: 100%;
+      min-width: 0;
+      margin-top: 30px;
+      margin-right: 0;
+      box-sizing: border-box;
+      justify-content: center;
+      align-items: center;
    }
-   
-   .icons {
-      gap: 8px;
+   .header {
       margin-top: 20px;
    }
-   
-   .icons img {
-      width: 35px;
-      height: 35px;
+   .main-logo {
+      width: 40vw;
+      max-width: 120px;
+      margin-top: 0;
    }
-   
-   #tradingview_ogold {
-      height: 510px;
+   .progress-bar {
+      width: 100%;
+      height: 32px;
+      padding: 0 4px;
+   }
+   .progress-text {
+      font-size: 9px;
+      padding: 0 2px;
+      letter-spacing: 1px;
+   }
+   .icons {
+      gap: 12px;
+      margin-top: 18px;
+   }
+   .icons img {
+      width: 28px;
+      height: 28px;
    }
 }
 
@@ -579,7 +583,7 @@ h1 {
 .frame {
    margin-top: 50px;
    width: 90%;
-   margin-right: 20px;
+   /* margin-right: 20px; */
    display: flex;
    justify-content: center;
    align-items: center;
