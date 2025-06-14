@@ -428,7 +428,7 @@ h1 {
    }
    
    .progress-bar {
-      width: 80%;
+      /* width: 80%; */
       height: 50px;
    }
    
@@ -562,5 +562,30 @@ h1 {
    
    #tradingview_ogold {
       height: 250px;
+   }
+}
+
+.chart-container {
+   margin-top: 50px;
+   width: 30vh;
+}
+
+/* Large screens (1000px and up) */
+@media screen and (min-width: 1000px) {
+   .chart-container {
+      width: 100vh;
+   }
+}
+
+.frame {
+   margin-top: 50px;
+   width: 90%;
+   margin-right: 20px;
+}
+
+@media screen and (min-width: 1000px) {
+   .frame {
+      width: 100vh;
+      margin-right: 0;
    }
 }
