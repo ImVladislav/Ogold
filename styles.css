@@ -493,6 +493,11 @@ h1 {
 
 /* Extra small screens (up to 575px) */
 @media screen and (max-width: 575px) {
+   html, body {
+      overflow-y: auto !important;
+      height: auto !important;
+      min-height: 100vh;
+   }
    .container {
       width: 100%;
       min-width: 0;
