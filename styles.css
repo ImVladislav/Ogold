@@ -716,9 +716,47 @@ h1 {
 .frame .tradingview-widget-container__widget {
    overflow: hidden !important;
    border-radius: 10px;
+   height: 800px;
 }
 
 .frame .tradingview-widget-container__widget iframe {
    overflow: hidden !important;
    border: none;
+   height: 800px !important;
+}
+
+/* Additional scroll removal */
+.frame {
+   overflow: hidden !important;
+}
+
+.frame * {
+   overflow: hidden !important;
+}
+
+.tradingview-widget-container__widget {
+   overflow: hidden !important;
+}
+
+.tradingview-widget-container__widget * {
+   overflow: hidden !important;
+}
+
+/* Specific vertical scroll removal */
+.frame {
+   overflow-y: hidden !important;
+   overflow-x: hidden !important;
+}
+
+.frame .tradingview-widget-container__widget {
+   overflow-y: hidden !important;
+   overflow-x: hidden !important;
+   max-height: none !important;
+}
+
+.frame .tradingview-widget-container__widget iframe {
+   overflow-y: hidden !important;
+   overflow-x: hidden !important;
+   max-height: none !important;
+   height: 900px !important;
 }
