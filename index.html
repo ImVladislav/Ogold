@@ -96,7 +96,7 @@
       <!-- Remove scroll from second frame -->
       <script>
          setTimeout(() => {
-            const secondFrame = document.querySelector('.frame .tradingview-widget-container__widget');
+            const secondFrame = document.querySelector('.frame');
             if (secondFrame) {
                secondFrame.style.overflow = 'hidden';
                const iframe = secondFrame.querySelector('iframe');
@@ -142,7 +142,6 @@
       <!-- TradingView Widget END -->
 <!-- TradingView Technical Analysis Widget -->
 <div class="frame">
-  <div class="tradingview-widget-container__widget"></div>
   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
     {
       "interval": "1D",
@@ -153,7 +152,8 @@
       "showIntervalTabs": true,
       "displayMode": "multiple", 
       "colorTheme": "dark",
-      "locale": "en"
+      "locale": "en",
+      "isTransparent": true
     }
   </script>
 </div>

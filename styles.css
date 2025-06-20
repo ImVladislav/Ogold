@@ -104,7 +104,8 @@ div,
    text-align: center;
    margin: 40px 0;
    padding: 30px;
-   max-width: 900px;
+   max-width: 865px;
+   width: 100%;
    margin-left: auto;
    margin-right: auto;
    background: rgba(0, 0, 0, 0.3);
@@ -698,6 +699,13 @@ h1 {
    justify-content: center;
    align-items: center;
    max-width: 875px;
+   background: rgba(0, 0, 0, 0.3);
+   backdrop-filter: blur(10px);
+   border-radius: 15px;
+   border: 2px solid rgba(255, 215, 0, 0.3);
+   padding: 20px;
+   margin: 20px 0;
+   overflow: hidden !important;
 }
 
 @media screen and (min-width: 1000px) {
@@ -713,16 +721,21 @@ h1 {
 }
 
 /* Second frame styles */
-.frame .tradingview-widget-container__widget {
+.frame {
    overflow: hidden !important;
-   border-radius: 10px;
-   height: 800px;
+   border-radius: 15px;
+   background: rgba(0, 0, 0, 0.3);
+   backdrop-filter: blur(10px);
+   border: 2px solid rgba(255, 215, 0, 0.3);
+   padding: 20px;
+   margin: 20px 0;
 }
 
-.frame .tradingview-widget-container__widget iframe {
-   overflow: hidden !important;
-   border: none;
-   height: 800px !important;
+.frame iframe {
+   overflow-y: hidden !important;
+   overflow-x: hidden !important;
+   max-height: none !important;
+   height: 900px !important;
 }
 
 /* Additional scroll removal */
@@ -734,27 +747,13 @@ h1 {
    overflow: hidden !important;
 }
 
-.tradingview-widget-container__widget {
-   overflow: hidden !important;
-}
-
-.tradingview-widget-container__widget * {
-   overflow: hidden !important;
-}
-
 /* Specific vertical scroll removal */
 .frame {
    overflow-y: hidden !important;
    overflow-x: hidden !important;
 }
 
-.frame .tradingview-widget-container__widget {
-   overflow-y: hidden !important;
-   overflow-x: hidden !important;
-   max-height: none !important;
-}
-
-.frame .tradingview-widget-container__widget iframe {
+.frame iframe {
    overflow-y: hidden !important;
    overflow-x: hidden !important;
    max-height: none !important;
