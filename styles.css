@@ -326,6 +326,10 @@ h1 {
       height: 400px;
    }
 
+   .frame .tradingview-widget-container__widget {
+      height: 600px;
+   }
+
    .section-title {
       font-size: 36px;
       letter-spacing: 1px;
@@ -509,16 +513,6 @@ h1 {
 
 .copy-message.show {
    opacity: 1;
-}
-
-@media screen and (max-width: 768px) {
-   .container {
-      padding: 10px;
-   }
-   
-   #tradingview_ogold {
-      height: 400px;
-   }
 }
 
 @media screen and (max-width: 480px) {
@@ -716,4 +710,15 @@ h1 {
 .tradingview-widget-container2{
    width: 100%;
     margin-top: 80px;
+}
+
+/* Second frame styles */
+.frame .tradingview-widget-container__widget {
+   overflow: hidden !important;
+   border-radius: 10px;
+}
+
+.frame .tradingview-widget-container__widget iframe {
+   overflow: hidden !important;
+   border: none;
 }
